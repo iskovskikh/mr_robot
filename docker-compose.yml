@@ -1,0 +1,9 @@
+---
+services:
+  mr-robot-app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./logs:/app/logs
+    env_file: ./.env

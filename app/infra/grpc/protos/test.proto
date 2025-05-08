@@ -1,0 +1,14 @@
+
+syntax = "proto3";
+
+service MyService {
+  rpc my_remote_call_procedure (MyRequestSchema) returns (MyResponseSchema);
+}
+
+message MyRequestSchema {
+  string name = 1;
+}
+
+message MyResponseSchema {
+  string message = 1;
+}
